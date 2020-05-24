@@ -1,0 +1,1055 @@
+/*****FIRST PAGE*****/
+div.page1 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("../images/homebgimg2.jpg"), url("../images/homebgimg2low.jpg"), url("../images/homebgimg3low.jpg") no-repeat #121c2e;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: auto;
+  /*navigation bar*/
+  /*center section*/
+}
+
+div.page1 nav {
+  padding-top: 8px;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+  /*old hover
+    a.medianavbar:hover, a.medianavbar:checked {    
+        color: $colortheme;
+        transition: 0.9s;
+    }
+    */
+}
+
+div.page1 nav img.navbarlogoimg {
+  width: 55px;
+  margin-left: 40px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+div.page1 nav img.navbarlogoimg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+div.page1 nav span.collapsenavicon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+div.page1 nav a.marginlink {
+  margin-right: 35px;
+}
+
+div.page1 nav span.navslash {
+  font-weight: 700;
+  position: relative;
+  right: 15px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+div.page1 nav a.medianavbar > span.slash1 {
+  position: relative;
+  margin-right: 1px;
+  right: 30px;
+}
+
+div.page1 nav a.medianavbar {
+  font: 700 17px "Biryani", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+div.page1 nav a.medianavbar:hover > span,
+div.page1 nav a.medianavbar:checked > span {
+  opacity: 1;
+  right: 0;
+}
+
+div.page1 nav a.medianavbar:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.page1 header.page1centersection h4.page1centersection {
+  font-family: "Marck Script";
+  font-size: 5em;
+  margin-bottom: -5px;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+div.page1 header.page1centersection h1.page1centersection {
+  font-family: "Biryani";
+  font-weight: 800;
+  font-size: 6em;
+  margin-bottom: -20px;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+div.page1 header.page1centersection span.slash1 {
+  -webkit-animation-name: slash1;
+          animation-name: slash1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+div.page1 header.page1centersection span.slash2 {
+  -webkit-animation-name: slash2;
+          animation-name: slash2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+div.page1 header.page1centersection hr.page1centersection {
+  border: 1.5px solid #e00246;
+  width: 250px;
+  -webkit-animation-name: ease;
+          animation-name: ease;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+div.page1 header.page1centersection h2.page1centersection {
+  font-family: "Biryani";
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 2em;
+  -webkit-animation-name: fadeslow;
+          animation-name: fadeslow;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+div.page1 header.page1centersection a.centerbutton {
+  -webkit-animation-name: fadeslow;
+          animation-name: fadeslow;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+  /*responsive page headers*/
+  h1.pageheader {
+    font-size: 1.9em !important;
+  }
+  h2.pageheader {
+    font-size: 0.8em !important;
+  }
+  /*responsive navigation bar*/
+  nav.medianavbar {
+    background-color: #121c2e !important;
+    margin-top: 0 !important;
+    padding: 10px 0 0px 0;
+  }
+  nav.medianavbar #navcontainer {
+    min-width: 100%;
+  }
+  nav.medianavbar img.navbarlogoimg {
+    margin-left: 40px;
+  }
+  nav.medianavbar button.nti {
+    margin-right: 30px;
+  }
+  nav.medianavbar a.medianavbar {
+    margin: 0;
+    text-align: center;
+    padding: 30px 0 30px 0;
+  }
+  nav.medianavbar a.marginlink {
+    margin-right: 0 !important;
+  }
+  nav.medianavbar a.medianavbar:link,
+  nav.medianavbar a.medianavbar:visited {
+    font: bold 19px "Yu Gothic UI Semibold";
+    background-color: #121c2e;
+  }
+  nav.medianavbar a.medianavbar:hover,
+  nav.medianavbar a.medianavbar:checked {
+    background-color: #1c2b49;
+    color: #fff !important;
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+  /*responsive first page*/
+  .page1centersection h4 {
+    font-size: 2.5em !important;
+  }
+  .page1centersection h1.page1centersection {
+    font-size: 3.5em !important;
+  }
+  .page1centersection hr.page1centersection {
+    border: 1.5px solid #e00246 !important;
+    margin-top: 25px;
+    width: 150px !important;
+  }
+  .page1centersection h2.page1centersection {
+    font-size: 2.5em !important;
+  }
+  .page1centersection h2.page1centersection {
+    font-size: 0.9em !important;
+    padding: 0 15px 0 15px;
+  }
+  .page1centersection a.centerbutton {
+    font-size: 12px !important;
+  }
+  /*responsive second page*/
+  div.page2 div.rowpage2 {
+    padding: 15px 0 15px 0 !important;
+  }
+  div.page2 ul.aboutme {
+    font-size: 17px !important;
+    padding-bottom: 0px !important;
+    line-height: 23px !important;
+  }
+  div.page2 img.aboutme {
+    width: 150px !important;
+    margin-top: 50px !important;
+  }
+  div.page2 h3.aboutme {
+    margin-top: 20px !important;
+    font-size: 20px;
+  }
+  /*responsive third page*/
+  div.page3 ul.expbars li:before {
+    font-size: 18px !important;
+  }
+  div.page3 li.expbars {
+    font-size: 17px !important;
+  }
+  div.page3 div.outsidebar {
+    height: 20px;
+    border-radius: 0.7em;
+    margin-left: 10px !important;
+  }
+  /*responsive fourth page*/
+  div.page4 span.closebutton {
+    right: 15px !important;
+    font-size: 80px !important;
+  }
+  div.page4 i {
+    font-size: 60px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  div.page4 i.fa-angle-left {
+    left: 5px !important;
+  }
+  div.page4 i.fa-angle-right {
+    right: 5px !important;
+  }
+  div.page4 h2.lightbox {
+    font-size: 20px;
+  }
+  div.page4 a {
+    font-size: 12px !important;
+  }
+  /*responsive fifth page*/
+  div.page5 {
+    padding: 30px !important;
+  }
+  div.page5 form {
+    margin-top: 70px !important;
+  }
+  div.page5 form input,
+  div.page5 form textarea {
+    width: 260px !important;
+  }
+  div.page5 form div {
+    width: 280px !important;
+    margin-top: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  div.page5 form div i {
+    float: left;
+    padding-top: 9px;
+  }
+  div.page5 form button {
+    margin-top: 70px !important;
+    padding: 8px 30px 8px 30px;
+  }
+  div.page5 h5 {
+    margin-top: 50px !important;
+    font-size: 16px;
+  }
+  div.page5 h5 span.theme,
+  div.page5 h5 span.theme2 {
+    letter-spacing: 0;
+  }
+  div.page5 h5 span.light {
+    margin-left: 5px;
+    margin-right: -5px;
+  }
+  /*responsive footer*/
+  footer {
+    padding: 10px !important;
+    text-align: center;
+  }
+  footer a {
+    padding: 7px !important;
+    font-size: 30px !important;
+    margin: 5px 10px;
+  }
+  footer a.fa-facebook {
+    padding: 7px 12px !important;
+  }
+}
+
+/*SELECTION*/
+::-moz-selection {
+  background-color: #e00246;
+}
+::selection {
+  background-color: #e00246;
+}
+
+/*SCROLL BAR STYLE*/
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e00246;
+}
+
+* {
+  color: #fff;
+}
+
+/*GENERAL*/
+body span.theme {
+  font-family: "Biryani", sans-serif;
+  font-weight: 300;
+  color: #e00246;
+}
+
+body span.theme2 {
+  font-family: "Biryani", sans-serif;
+  color: #fec254;
+  font-weight: 300;
+}
+
+body span.light {
+  font-family: "Biryani", sans-serif;
+  font-weight: 300;
+}
+
+body .centerbutton {
+  font-size: 15px;
+  padding: 11px 20px 11px 20px;
+  letter-spacing: 2px;
+  border-radius: 12px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+/*PAGE HEADERS*/
+h1.pageheader {
+  margin-top: 60px;
+  font-family: "Biryani", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+hr.pageheader {
+  border: 1.5px solid #e00246;
+  width: 0px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+h2.pageheader {
+  margin-top: 25px;
+  font-family: "Biryani", sans-serif;
+  font-size: 1em;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*animations*/
+/*h1 slash 1*/
+@-webkit-keyframes slash1 {
+  0% {
+    opacity: 0;
+    position: relative;
+    right: 40%;
+  }
+  50% {
+    opacity: 0;
+    position: relative;
+    right: 40%;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0;
+  }
+}
+@keyframes slash1 {
+  0% {
+    opacity: 0;
+    position: relative;
+    right: 40%;
+  }
+  50% {
+    opacity: 0;
+    position: relative;
+    right: 40%;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0;
+  }
+}
+
+/*h1 slash 2*/
+@-webkit-keyframes slash2 {
+  0% {
+    opacity: 0;
+    position: relative;
+    right: 20%;
+  }
+  50% {
+    opacity: 0;
+    position: relative;
+    right: 20%;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0;
+  }
+}
+@keyframes slash2 {
+  0% {
+    opacity: 0;
+    position: relative;
+    right: 20%;
+  }
+  50% {
+    opacity: 0;
+    position: relative;
+    right: 20%;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0;
+  }
+}
+
+/*hr*/
+@-webkit-keyframes ease {
+  0% {
+    width: 0;
+  }
+}
+@keyframes ease {
+  0% {
+    width: 0;
+  }
+}
+
+/*navbar*/
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*h2*/
+@-webkit-keyframes fadeslow {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeslow {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lightboxslideright {
+  0% {
+    position: relative;
+    left: 50%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes lightboxslideright {
+  0% {
+    position: relative;
+    left: 50%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lightboxslideleft {
+  0% {
+    position: relative;
+    right: 50%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes lightboxslideleft {
+  0% {
+    position: relative;
+    right: 50%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes faderight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes faderight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideright {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0);
+            transform: translate3d(0);
+  }
+}
+
+@keyframes slideright {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0);
+            transform: translate3d(0);
+  }
+}
+
+/*button
+   @keyframes button {
+       0% {
+           opacity: 0;
+           position: relative;
+           left: 20%;
+       }
+
+       50% {
+           opacity: 0;
+           position: relative;
+           left: 20%;
+       }
+
+       100% {
+           opacity: 1;
+           position: relative;
+           left: 0;
+      }       
+    }   */
+/*****SECOND PAGE*****/
+div.page2 {
+  margin: 0;
+  background-color: #141f34;
+  overflow: hidden;
+  height: 100%;
+}
+
+div.page2 div.rowpage2 {
+  padding: 100px 0 100px 0;
+}
+
+div.page2 ul.aboutme {
+  padding: 50px;
+  font-family: "Calibri";
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+  list-style-type: none;
+}
+
+div.page2 ul.aboutme li:before {
+  content: "*";
+  font-family: "Calibri";
+  font-size: 20px;
+  color: #e00246;
+  margin: 0 0.5em;
+}
+
+div.page2 li.aboutme {
+  margin-bottom: 20px;
+}
+
+div.page2 img.aboutme {
+  width: 200px;
+  margin-top: 60px;
+}
+
+div.page2 h3.aboutme,
+div.page2 h3.aboutme span {
+  font-size: 40px;
+  font-family: "Marck Script", cursive;
+  margin-top: 40px;
+}
+
+/*****THIRD PAGE*****/
+div.page3 {
+  margin: 0;
+  background: url("../images/thirdbgimg.jpg") no-repeat #121c2e;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 100%;
+  /*animations - go to div.insidebar!
+    @keyframes easeright {
+        0% {
+            width: 0%;
+        }
+    }*/
+}
+
+div.page3 ul.expbars {
+  list-style-type: none;
+  line-height: 2em;
+  padding: 120px 0 100px 0;
+}
+
+div.page3 ul.expbars li:before {
+  content: "*";
+  font-family: "Calibri";
+  font-size: 30px;
+  color: #e00246;
+  margin: 0 0.2em;
+}
+
+div.page3 li.expbars {
+  font-family: "Calibri";
+  font-weight: bold;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+div.page3 div.outsidebar {
+  background-color: rgba(24, 33, 50, 0.5);
+  height: 20px;
+  border-radius: 2em;
+  margin-left: 20px;
+}
+
+div.page3 div.insidebar {
+  background-color: #e00246;
+  border-radius: 20px;
+}
+
+div.page3 div.reactbar {
+  width: 37%;
+}
+
+div.page3 div.photoshopbar {
+  width: 85%;
+}
+
+/*****FOURTH PAGE*****/
+div.page4 {
+  margin: 0;
+  padding-bottom: 0;
+  background-color: #141f34;
+  overflow: hidden;
+  height: 100%;
+}
+
+div.page4 div.page4container {
+  padding: 0;
+}
+
+div.page4 h2.mywork {
+  margin-bottom: 130px;
+}
+
+div.page4 div.mywork {
+  background-color: #141f34;
+  padding: 0;
+}
+
+div.page4 div.mywork div.imagecol {
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+div.page4 div.mywork div.imagecol img.mywork {
+  width: 100%;
+}
+
+div.page4 div.mywork div.imagecol div.overlay {
+  background-color: #141f34;
+  position: absolute;
+  opacity: 0.98;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+}
+
+div.page4 div.mywork div.imagecol div.overlay h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+div.page4 div.mywork div.imagecol div.overlay hr {
+  border: solid 1px #e00246;
+  width: 30px;
+}
+
+div.page4 div.mywork div.imagecol div.overlay h2 {
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+div.page4 div.mywork div.overlaycontent {
+  opacity: 0;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+div.page4 div.mywork div.imagecol:hover div.overlay {
+  width: 100%;
+}
+
+div.page4 div.mywork div.imagecol:hover div.overlaycontent {
+  opacity: 1;
+}
+
+div.page4 .hiderow {
+  display: none;
+}
+
+div.page4 div.lightboxblock {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #182132;
+  z-index: 2;
+}
+
+div.page4 div.lightboxblock span.closebutton,
+div.page4 div.lightboxblock i {
+  color: #fff;
+  cursor: pointer;
+}
+
+div.page4 div.lightboxblock span.closebutton:hover,
+div.page4 div.lightboxblock i:hover {
+  opacity: 0.7;
+}
+
+div.page4 div.lightboxblock span.closebutton {
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  font-size: 120px;
+}
+
+div.page4 div.lightboxblock i {
+  position: absolute;
+  font-size: 80px;
+  padding: 30px;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+
+div.page4 div.lightboxblock i.fa-angle-left {
+  left: 80px;
+}
+
+div.page4 div.lightboxblock i.fa-angle-right {
+  right: 80px;
+}
+
+div.page4 div.lightboxblock .lightboxslideleft {
+  -webkit-animation-name: lightboxslideleft;
+          animation-name: lightboxslideleft;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+div.page4 div.lightboxblock .lightboxslideright {
+  -webkit-animation-name: lightboxslideright;
+          animation-name: lightboxslideright;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+div.page4 div.lightboxblock div.lightboxcontainer {
+  text-align: center;
+  display: none;
+}
+
+div.page4 div.lightboxblock div.lightboxcontainer img.lightboximg {
+  height: 80vh;
+  margin: 20px;
+}
+
+div.page4 div.lightboxblock div.lightboxcontainer h2.lightbox a {
+  color: #e00246;
+}
+
+div.page4 div.lightboxblock div.lightboxcontainer h2.lightbox {
+  font-weight: 600;
+}
+
+div.page4 div.loadmore {
+  background-color: #e00246;
+  padding: 2.5vh;
+  margin: 0;
+}
+
+/*****FIFTH PAGE*****/
+div.page5 {
+  margin: 0;
+  background-color: #141f34;
+  overflow: hidden;
+  height: 100%;
+  background: url("../images/fourthbgimg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
+div.page5 form {
+  margin-top: 120px;
+  text-align: center;
+}
+
+div.page5 form input,
+div.page5 form textarea {
+  width: 570px;
+  background: transparent;
+  border: none;
+  padding: 7px 5px;
+  outline: none;
+}
+
+div.page5 form textarea {
+  resize: none;
+}
+
+div.page5 form div {
+  display: inline-block;
+  width: 600px;
+  margin-top: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+div.page5 form div i {
+  float: left;
+  padding-top: 9px;
+}
+
+div.page5 form button {
+  margin-top: 80px;
+  padding: 8px 30px 8px 30px;
+}
+
+div.page5 h5 {
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Biryani", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+div.page5 h5 span.theme,
+div.page5 h5 span.theme2 {
+  letter-spacing: 0;
+}
+
+div.page5 h5 span.light {
+  margin-left: 5px;
+  margin-right: -5px;
+}
+
+/*****FOOTER*****/
+footer {
+  background-color: #e00246;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  padding: 10px;
+  font-size: 30px !important;
+  margin: 5px 10px;
+  border-radius: 50%;
+  background: #fff;
+  color: #e00246;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+footer a.fa-facebook {
+  padding: 10px 15px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+}
+/*# sourceMappingURL=stylesheet.css.map */
